@@ -1,0 +1,129 @@
+.wrap{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 2em;
+}
+input[type='file'] {
+    opacity:.0;
+    cursor: pointer;
+    background-color: red;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: inherit;
+    height: inherit;
+}
+#img{
+    width: inherit;
+    border-radius: 25%;
+    position: relative;
+    height: inherit;
+    object-fit: cover;
+
+}
+#img_contrainer{
+    position: relative;
+    width: 256px;
+    height: 256px;
+}
+#imgup{
+    width: inherit;
+    height: inherit;
+}
+.main_info{
+    display: flex;
+    align-items: center;
+    gap: 5em;
+}
+.profile_name{
+    font-size: 32px;
+    font-family: "RedDead";
+    font-weight: 600;
+    cursor: default;
+}
+.info_changable{
+    width: 60%;;
+}
+.params{
+    padding: 4em;
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    height: 20vh;
+    border-radius: 5px;
+    background-color: slategray;
+    margin: 1em;
+    display: flex;
+    justify-content: center;
+}
+.about{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+#user_param{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    height: auto;
+}
+@media screen and (max-width: 950px) {  
+    #profile_wrap {
+        height: auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin: 40% 0% 0% 0%;
+        gap: 5em;
+    }
+    .main_info {
+        display: flex;
+        align-items: center;
+        gap: 2em;
+    }
+    #img_contrainer {
+        position: relative;
+        width: 128px;
+        height: 128px;
+    }
+    .profile_name {
+        font-size: 32px;
+        font-family: "RedDead";
+        font-weight: 600;
+        cursor: default;
+    }
+    .info_changable {
+        width: 100%;
+    }
+    .params {
+         padding: unset; 
+        color: #fff;
+        font-weight: 600;
+        font-size: 18px;
+        width: 90%;
+        height: auto;
+        border-radius: 5px;
+        background-color: slategray;
+        margin: 5%;
+        display: flex;
+        justify-content: center;
+    }
+    .about {
+        display: flex;
+        flex: 1;
+        padding: 1em;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+@font-face {
+    font-family: "RedDead";
+    src: url("..\\fonts\\RDRLino-Regular.ttf");
+}
